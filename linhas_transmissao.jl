@@ -140,7 +140,7 @@ t = LinRange(t_min, t_max, 200)   # 200 pontos de t_min a t_max
 V = [V_total(zi, ti) for zi in z, ti in t]
 
 # Plot da tensão total em 3D
-surface(z, t, V, xlabel="Posição (z)", ylabel="Tempo (t)", zlabel="Tensão (V)", title="Tensão Total (V(z,t))")
+Plots.surface(z, t, V, xlabel="Posição (z)", ylabel="Tempo (t)", zlabel="Tensão (V)", title="Tensão Total (V(z,t))")
 end
 
 # ╔═╡ f8f8e8cf-442c-4e9b-b4fd-af3dfbfe2881
@@ -168,7 +168,7 @@ t = LinRange(t_min, t_max, 200)   # 200 pontos de t_min a t_max
 V = [V_total(zi, ti) for zi in z, ti in t]
 
 # Plot do mapa de calor (heatmap)
-heatmap(z, t, V, xlabel="Posição (z)", ylabel="Tempo (t)", title="Mapa de Calor da Tensão Total (V(z,t))")
+Plots.heatmap(z, t, V, xlabel="Posição (z)", ylabel="Tempo (t)", title="Mapa de Calor da Tensão Total (V(z,t))")
 end
 
 # ╔═╡ 55e4cd64-e14f-4dc8-8407-55616b6e0142
